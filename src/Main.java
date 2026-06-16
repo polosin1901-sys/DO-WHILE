@@ -5,7 +5,7 @@ public class Main {
         int firstDay = 2;
         int i = 1;
         for (; i <= 31; i++) {
-            while (i == firstDay + 7) {
+            if (i == firstDay + 7) {
                 System.out.println("Сегодня пятница " + i + "-е число. Необходимо подготовить отчет");
                 firstDay += 7;
             }
